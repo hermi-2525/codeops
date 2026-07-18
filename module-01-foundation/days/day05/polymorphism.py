@@ -1,0 +1,25 @@
+class Vehicle:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+
+    def describe(self):
+        print(f"{self.make} {self.model}")
+
+
+class Car(Vehicle):
+    pass
+
+
+class Truck(Vehicle):
+    def describe(self):
+        print(f"Truck: {self.make} {self.model}")
+
+
+vehicles = [
+    Car("Toyota", "Corolla"),
+    Truck("Volvo", "FH16")
+]
+
+for vehicle in vehicles:
+    vehicle.describe()

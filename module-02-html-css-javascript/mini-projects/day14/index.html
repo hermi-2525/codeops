@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeleBirr Style Dashboard — Day 14</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <div class="brand">TeleBirr <span>Dashboard</span></div>
+    <nav class="top-nav"><a href="#">Home</a><a href="#">Transactions</a><a href="#">Help</a><button>HA</button></nav>
+  </header>
+
+  <aside class="sidebar">
+    <strong>MENU</strong><a class="active" href="#">Overview</a><a href="#">Send Money</a>
+    <a href="#">Payments</a><a href="#">History</a><a href="#">Settings</a>
+  </aside>
+
+  <main class="main-content">
+    <section class="welcome">
+      <div><small>ACCOUNT OVERVIEW</small><h1>Good afternoon, Hermela</h1><p>Here is your account summary.</p></div>
+      <button class="primary-button">+ Send Money</button>
+    </section>
+
+    <section class="stat-cards">
+      <article class="stat-card"><p>Available Balance</p><h2>ETB 18,450.00</h2><span>+ ETB 2,400 this month</span></article>
+      <article class="stat-card"><p>Money Sent</p><h2>ETB 6,850.00</h2><span>12 transactions</span></article>
+      <article class="stat-card"><p>Payments</p><h2>ETB 3,250.00</h2><span>8 payments</span></article>
+    </section>
+
+    <section class="dashboard-grid">
+      <article class="panel">
+        <div class="panel-header"><h2>Recent Transactions</h2><a href="#">View all</a></div>
+        <div class="transactions">
+          <div class="transaction"><b>M</b><span><strong>Mobile Airtime</strong><small>Today, 10:42 AM</small></span><strong>- ETB 200</strong></div>
+          <div class="transaction"><b>S</b><span><strong>Salary</strong><small>Yesterday, 9:00 AM</small></span><strong class="income">+ ETB 12,500</strong></div>
+          <div class="transaction"><b>C</b><span><strong>Café Payment</strong><small>Aug 21, 3:15 PM</small></span><strong>- ETB 450</strong></div>
+        </div>
+      </article>
+
+      <article class="panel">
+        <h2>Quick Actions</h2>
+        <div class="quick-actions"><button>Send Money</button><button>Buy Airtime</button><button>Pay Bill</button><button>Scan & Pay</button></div>
+      </article>
+    </section>
+
+    <section>
+      <h2>Recommended Services</h2>
+      <div class="offer-grid">
+        <article class="offer-card"><span class="offer-badge">NEW</span><h3>Save with TeleBirr</h3><p>Explore savings options for your goals.</p><a href="#">Learn more →</a></article>
+        <article class="offer-card"><h3>Pay School Fees</h3><p>Make school payments quickly.</p><a href="#">Get started →</a></article>
+        <article class="offer-card"><h3>Merchant Payments</h3><p>Discover nearby digital-payment merchants.</p><a href="#">Explore →</a></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© 2026 TeleBirr-style Dashboard — fictional practice interface.</footer>
+</div>
+</body>
+</html>

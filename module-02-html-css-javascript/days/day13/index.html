@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 13 CSS Exercises</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="page-header">
+    <h1>Day 13 CSS Exercises</h1>
+    <p>CSS Foundations</p>
+  </header>
+
+  <main class="container">
+  
+    <section class="exercise">
+      <h2>Exercise 1 — CSS Variables and Button</h2>
+      <p>One reusable button uses the color, spacing and font variables from <code>:root</code>.</p>
+      <button class="variable-button">Book a Service</button>
+    </section>
+
+    <section class="exercise">
+      <h2>Exercise 2 — Box Model</h2>
+      <div class="box-model-grid">
+        <div>
+          <h3>content-box</h3>
+          <div class="card content-box-card">300px declared width + 24px padding + 2px borders on both sides = <strong>352px rendered width</strong>.</div>
+        </div>
+        <div>
+          <h3>border-box</h3>
+          <div class="card border-box-card">300px declared width including padding and border = <strong>300px rendered width</strong>.</div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="exercise">
+      <h2>Exercise 3 — Specificity</h2>
+      <p id="priority-note" class="note">This paragraph is targeted by an element, class and ID selector. The ID rule wins.</p>
+      <div class="specificity-table">
+        <div><strong>p</strong><span>(0, 0, 0, 1)</span></div>
+        <div><strong>.note</strong><span>(0, 0, 1, 0)</span></div>
+        <div class="winner"><strong>#priority-note</strong><span>(0, 1, 0, 0) — WINS</span></div>
+      </div>
+    </section>
+
+    <section class="exercise">
+      <h2>Exercise 4 — Ethiopian Airlines Schedule</h2>
+      <div class="table-wrapper">
+        <table>
+          <caption>Sample Ethiopian Airlines Schedule</caption>
+          <thead>
+            <tr>
+              <th>Flight</th>
+              <th>Route</th>
+              <th>Departure</th>
+              <th>Arrival</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>ET 602</td><td>Addis Ababa → Dubai</td><td>00:10</td><td>05:30</td></tr>
+            <tr><td>ET 920</td><td>Addis Ababa → London</td><td>01:15</td><td>07:05</td></tr>
+            <tr><td>ET 500</td><td>Addis Ababa → Washington</td><td>22:50</td><td>07:15</td></tr>
+            <tr><td>ET 302</td><td>Addis Ababa → Nairobi</td><td>09:10</td><td>11:15</td></tr>
+            <tr><td>ET 612</td><td>Addis Ababa → Johannesburg</td><td>09:30</td><td>14:20</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="exercise">
+      <h2>Exercise 5 — Color Conversion</h2>
+      <p>The palette below shows three hex colors, their RGB/HSL values, and a lighter HSL hover shade.</p>
+      <div class="palette">
+        <article class="swatch swatch-blue">
+          <div class="color-preview"></div>
+          <h3>#1B4D8E</h3>
+          <p>RGB: rgb(27, 77, 142)</p>
+          <p>HSL: hsl(212, 68%, 33%)</p>
+          <p>Hover: hsl(212, 68%, 45%)</p>
+        </article>
+        <article class="swatch swatch-gold">
+          <div class="color-preview"></div>
+          <h3>#D4A027</h3>
+          <p>RGB: rgb(212, 160, 39)</p>
+          <p>HSL: hsl(42, 68%, 49%)</p>
+          <p>Hover: hsl(42, 68%, 61%)</p>
+        </article>
+        <article class="swatch swatch-green">
+          <div class="color-preview"></div>
+          <h3>#2E8B57</h3>
+          <p>RGB: rgb(46, 139, 87)</p>
+          <p>HSL: hsl(146, 50%, 36%)</p>
+          <p>Hover: hsl(146, 50%, 48%)</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Day 13 — CSS Foundations Exercises</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,454 @@
+
+:root {
+    --brand: hsl(212, 68%, 33%);
+    --brand-dark: hsl(212, 68%, 25%);
+    --accent: hsl(42, 68%, 49%);
+
+    --background: #F4F7FA;
+    --surface: white;
+    --text: #243447;
+    --muted: #52606D;
+    --border: #D9E2EC;
+    --sidebar: #102A43;
+
+    --space: 16px;
+    --radius: 12px;
+
+    --font-stack: Arial, sans-serif;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-stack);
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--background);
+}
+
+.app {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+
+    grid-template-rows: auto 1fr auto;
+
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+
+    min-height: 100vh;
+}
+
+
+.topbar {
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: var(--space);
+
+    padding: 14px 28px;
+
+    background-color: var(--surface);
+
+    border-bottom: 1px solid var(--border);
+}
+
+.brand {
+    color: var(--brand);
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+.brand span {
+    color: var(--accent);
+}
+
+
+.top-nav {
+    display: flex;
+
+    align-items: center;
+
+    gap: 24px;
+}
+
+.top-nav a {
+    color: var(--muted);
+
+    text-decoration: none;
+}
+
+.top-nav button {
+    width: 40px;
+    height: 40px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: var(--brand);
+
+    color: white;
+
+    font-weight: bold;
+}
+
+.sidebar {
+    grid-area: sidebar;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    padding: 24px 16px;
+
+    background-color: var(--sidebar);
+}
+.sidebar strong {
+    margin-bottom: 12px;
+
+    color: #9FB3C8;
+
+    font-size: 13px;
+}
+
+.sidebar a {
+    padding: 12px 14px;
+
+    color: #D9E2EC;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+}
+
+
+.sidebar a:hover,
+.sidebar a.active {
+    background-color: rgba(255, 255, 255, 0.1);
+
+    color: white;
+}
+
+
+.main-content {
+    grid-area: main;
+    padding: 32px;
+    min-width: 0;
+}
+
+.welcome {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 24px;
+
+    margin-bottom: 24px;
+}
+.welcome small {
+    color: var(--accent);
+
+    font-weight: bold;
+}
+
+.welcome h1 {
+    margin: 4px 0;
+
+    line-height: 1.2;
+}
+
+.welcome p {
+    color: var(--muted);
+}
+
+.primary-button {
+    padding: 11px 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: var(--brand);
+
+    color: white;
+
+    font-weight: bold;
+}
+
+.stat-cards {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: var(--space);
+
+    margin-bottom: 24px;
+}
+
+.stat-card {
+    flex: 1;
+
+    min-width: 210px;
+
+    padding: 20px;
+
+    background-color: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+}
+
+.stat-card p {
+    color: var(--muted);
+}
+
+
+.stat-card span {
+    color: var(--muted);
+}
+
+.stat-card h2 {
+    margin: 4px 0;
+}
+
+.dashboard-grid {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: var(--space);
+
+    margin-bottom: 24px;
+}
+
+.panel {
+    padding: 20px;
+
+    background-color: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+}
+
+.panel-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.panel-header a {
+    color: var(--brand);
+}
+
+.transactions {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.transaction {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 13px 0;
+
+    border-bottom: 1px solid #EEF2F6;
+}
+
+.transaction > b {
+    width: 38px;
+    height: 38px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background-color: #EAF0F7;
+
+    color: var(--brand);
+}
+
+.transaction > span {
+    display: flex;
+
+    flex-direction: column;
+
+    flex: 1;
+}
+
+
+.transaction small {
+    color: var(--muted);
+}
+
+.income {
+    color: hsl(146, 50%, 36%);
+}
+
+.quick-actions {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.quick-actions button {
+    flex: 1;
+
+    min-width: 120px;
+
+    padding: 12px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 8px;
+
+    background-color: white;
+
+    color: var(--brand);
+}
+
+.offer-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(220px, 1fr)
+        );
+
+    gap: var(--space);
+}
+
+.offer-card {
+    position: relative;
+
+    min-height: 160px;
+
+    padding: 20px;
+
+    background-color: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+}
+
+.offer-card p {
+    color: var(--muted);
+}
+
+.offer-card a {
+    color: var(--brand);
+
+    font-weight: bold;
+}
+
+.offer-badge {
+      position: absolute;
+
+    top: 12px;
+
+    right: 12px;
+
+    padding: 4px 8px;
+
+    border-radius: 999px;
+
+    background-color: var(--accent);
+
+    color: white;
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+.footer {
+    grid-area: footer;
+
+    padding: 18px;
+
+    background-color: white;
+
+    border-top: 1px solid var(--border);
+
+    color: var(--muted);
+
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .app {
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "main"
+            "footer";
+    }
+    .topbar {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+    .top-nav {
+        width: 100%;
+
+        justify-content: space-between;
+
+        flex-wrap: wrap;
+    }
+
+    .sidebar {
+        flex-direction: row;
+
+        flex-wrap: wrap;
+    }
+    .main-content {
+        padding: 20px 16px;
+    }
+
+    .welcome {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}

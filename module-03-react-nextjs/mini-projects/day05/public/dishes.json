@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Doro Wot",
+    "price": 350,
+    "category": "Main"
+  },
+  {
+    "id": 2,
+    "name": "Shiro",
+    "price": 180,
+    "category": "Vegan"
+  },
+  {
+    "id": 3,
+    "name": "Tibs",
+    "price": 300,
+    "category": "Grill"
+  },
+  {
+    "id": 4,
+    "name": "Misir Wot",
+    "price": 160,
+    "category": "Vegan"
+  },
+  {
+    "id": 5,
+    "name": "Kitfo",
+    "price": 400,
+    "category": "Main"
+  }
+]

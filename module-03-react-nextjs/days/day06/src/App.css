@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+}
+
+.header {
+  padding: 25px 8%;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  color: #222;
+}
+
+.header p {
+  margin: 5px 0 0;
+  color: #666;
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
+  padding: 15px 8%;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+}
+
+.nav-link.active {
+  color: #000;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+}
+
+.main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 35px 20px;
+  min-height: 70vh;
+}
+
+.home,
+.not-found,
+.dish-detail,
+.login,
+.checkout {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.home {
+  text-align: center;
+}
+
+.primary-button,
+.details-button {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #222;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+.categories {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+
+.categories button {
+  padding: 10px 18px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.categories button.active {
+  background: #222;
+  color: white;
+}
+
+.dish-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.dish-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.category {
+  font-size: 13px;
+  color: #777;
+  text-transform: capitalize;
+}
+
+.dish-card h3 {
+  font-size: 21px;
+}
+
+.dish-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.dish-actions button {
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item button {
+  cursor: pointer;
+}
+
+.login form {
+  max-width: 400px;
+}
+
+.login input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+}
+
+.login button {
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  padding: 25px;
+  background: white;
+  border-top: 1px solid #ddd;
+}
+
+.empty {
+  text-align: center;
+  padding: 40px;
+}
+
+@media (max-width: 700px) {
+  .dish-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    padding: 15px 20px;
+  }
+}

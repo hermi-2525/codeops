@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "Doro Wat",
+    "description": "Traditional Ethiopian chicken stew served with injera.",
+    "price": 240,
+    "category": "Traditional"
+  },
+  {
+    "id": 2,
+    "name": "Shiro",
+    "description": "Smooth chickpea stew seasoned with Ethiopian spices.",
+    "price": 120,
+    "category": "Vegan"
+  },
+  {
+    "id": 3,
+    "name": "Tibs",
+    "description": "Sautéed beef with onions, peppers and Ethiopian spices.",
+    "price": 280,
+    "category": "Traditional"
+  },
+  {
+    "id": 4,
+    "name": "Misir Wat",
+    "description": "Spicy red lentil stew prepared with berbere.",
+    "price": 150,
+    "category": "Vegan"
+  },
+  {
+    "id": 5,
+    "name": "Gomen",
+    "description": "Ethiopian collard greens cooked with spices.",
+    "price": 130,
+    "category": "Vegan"
+  },
+  {
+    "id": 6,
+    "name": "Kitfo",
+    "description": "Seasoned minced beef served with traditional Ethiopian sides.",
+    "price": 320,
+    "category": "Traditional"
+  },
+  {
+    "id": 7,
+    "name": "Fasting Firfir",
+    "description": "Injera pieces mixed with berbere sauce and vegetables.",
+    "price": 140,
+    "category": "Vegan"
+  }
+]

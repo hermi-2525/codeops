@@ -1,0 +1,259 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: #6b1f1f;
+  color: white;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-right button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-link {
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.nav-link.active {
+  background: #6b1f1f;
+  color: white;
+}
+
+.main {
+  width: 84%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+  flex: 1;
+}
+
+.home {
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 42px;
+}
+
+.home p {
+  font-size: 18px;
+}
+
+.button {
+  display: inline-block;
+  background: #6b1f1f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.specials {
+  margin-top: 50px;
+}
+
+.special-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.special-card {
+  padding: 25px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.categories {
+  display: flex;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+.category {
+  padding: 10px 18px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background: white;
+}
+
+.category.active {
+  background: #6b1f1f;
+  color: white;
+}
+
+.search {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+.dish-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.dish-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.dish-link {
+  display: block;
+}
+
+.dish-card h3 {
+  margin-top: 0;
+}
+
+.dish-card button {
+  width: 100%;
+}
+
+.detail {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+}
+
+.cart-item button {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+}
+
+.cart-actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.login,
+.checkout {
+  max-width: 600px;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form textarea {
+  min-height: 120px;
+}
+
+.order-summary {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.not-found {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.error {
+  color: #b00020;
+  padding: 20px;
+  background: #ffe5e5;
+  border-radius: 6px;
+}
+
+.empty {
+  padding: 30px;
+  text-align: center;
+  background: white;
+  border-radius: 8px;
+}
+
+.footer {
+  text-align: center;
+  padding: 25px;
+  background: #222;
+  color: white;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .special-grid,
+  .dish-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    padding: 15px;
+  }
+
+  .nav {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .main {
+    width: 92%;
+  }
+}

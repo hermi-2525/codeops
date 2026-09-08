@@ -22,6 +22,7 @@ export default function Nav() {
         className={({ isActive }) => (isActive ? "active" : "")}
       >
         Cart
+        
       </NavLink>
     </nav>
   );
